@@ -1,6 +1,7 @@
 //
 //  ContentView.swift
-//  WeSplit13
+//  WeSplit for iOS13+
+//
 //
 //  Created by Talha Basit on 7/16/20.
 //  Copyright © 2020 Talha Basit. All rights reserved.
@@ -10,10 +11,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // SwiftUI Views are structs, so aren't mutable, to save state use @State
     @State private var checkAmount = ""
-    @State private var numberOfPeople = 2
+    @State private var numberOfPeople = 2 // doesn't make sense to split check with less than 2 people
     @State private var tipPercentage = 2
     
+    // todo: this is clunky putting tip percenteges in array. fix later
     let tipPercentages = [10,15,20,25,0]
     
     var totalPerPerson: Double {
@@ -30,12 +33,12 @@ struct ContentView: View {
     }
     
     var totalBill: Double {
-        
         return totalPerPerson * Double(numberOfPeople + 2)
         
     }
     
     
+    // Main View Here
     var body: some View {
         NavigationView {
             Form {
