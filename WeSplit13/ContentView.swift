@@ -44,11 +44,11 @@ struct ContentView: View {
             Form {
                 Section {
                     TextField("Amount", text: $checkAmount)
-                        .keyboardType(.decimalPad)
+                        .keyboardType(.decimalPad) // don't want users to enter text, just numbers
                     
                     Picker("Number of People", selection: $numberOfPeople) {
                         ForEach(2 ..< 100) {
-                            Text("\($0) people")
+                            Text("\($0) people") // Closure syntax for parameters
                         }
                     }
                 }
@@ -70,7 +70,7 @@ struct ContentView: View {
                 }
                
             }
-            .navigationBarTitle("BananaSplit")
+            .navigationBarTitle("WeSplit")
             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
         }
         
