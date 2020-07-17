@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC68B07B24C15F4D00E269B0 /* WeSplit13.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeSplit13.entitlements; sourceTree = "<group>"; };
 		BCE049EB24C0DE7C00FB0F3C /* WeSplit13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE049EE24C0DE7C00FB0F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE049F024C0DE7C00FB0F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		BCE049ED24C0DE7C00FB0F3C /* WeSplit13 */ = {
 			isa = PBXGroup;
 			children = (
+				BC68B07B24C15F4D00E269B0 /* WeSplit13.entitlements */,
 				BCE049EE24C0DE7C00FB0F3C /* AppDelegate.swift */,
 				BCE049F024C0DE7C00FB0F3C /* SceneDelegate.swift */,
 				BCE049F224C0DE7C00FB0F3C /* ContentView.swift */,
@@ -284,17 +286,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeSplit13/WeSplit13.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WeSplit13/Preview Content\"";
 				DEVELOPMENT_TEAM = GFA37KUS6W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WeSplit13/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiraldot.wesplit13.WeSplit13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,17 +309,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeSplit13/WeSplit13.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WeSplit13/Preview Content\"";
 				DEVELOPMENT_TEAM = GFA37KUS6W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WeSplit13/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiraldot.wesplit13.WeSplit13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
