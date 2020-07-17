@@ -1,7 +1,7 @@
 # SwiftUI-WeSplit
 
-Simple Tip calculator to play with SwiftUI and MVVM
+Simple Tip calculator to play with multi-platform SwiftUI and MVVM
 
-Requires: iOS 13+
+Requires: iOS 13+, macOS 10.15+ (Catalina)
 
 
